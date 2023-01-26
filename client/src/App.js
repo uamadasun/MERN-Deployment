@@ -9,11 +9,13 @@ import Detail from './views/Detail';
 // import Update from './views/Update';
 import Create from './views/Create';
 import NewReview from './views/NewReview';
+import { Navigate } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Routes>
+            <Route element={<Navigate to="/movies" replace/>} path="/"/>
             <Route element={<Main/>} path="/movies" />
             <Route element={<Detail />} path="/view/movie/:_id"/>
             <Route element={<Create />} path="movies/create/"/>
