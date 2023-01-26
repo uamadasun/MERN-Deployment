@@ -24,7 +24,7 @@ const Detail = (props) => {
     const deleteMovie = (productId) => {
         axios.delete('http://localhost:8000/api/movie/'+ productId)
         .then(res => {
-            navigate('/movies')
+            navigate('/')
         })
         .catch(err => console.log(err));
     }

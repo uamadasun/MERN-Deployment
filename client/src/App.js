@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-            <Route element={<Navigate to="/movies" replace/>} path="/"/>
-            <Route element={<Main/>} path="/movies" />
+            {/* <Route element={<Navigate to="/movies" replace/>} path="/"/> */}
+            <Route element={<Main/>} path="/" />
             <Route element={<Detail />} path="/view/movie/:_id"/>
             <Route element={<Create />} path="movies/create/"/>
             <Route element={<NewReview />} path="movie/new/review/:_id"/>

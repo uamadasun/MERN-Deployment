@@ -27,7 +27,7 @@ const MovieForm = (props) => {
         })
             .then(res=>{
                 
-                navigate('/movies')
+                navigate('/')
                 // console.log(movie)
 
             })

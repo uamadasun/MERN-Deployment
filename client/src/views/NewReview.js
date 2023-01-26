@@ -88,7 +88,7 @@ const NewReview = (props) => {
                 
                 <input type="submit"  className = {(name.length > 1) && (review.length > 10) ? "btn btn-primary" : "btn btn-primary disabled"} />
             </form>
-        <Link to="/movies" > Cancel</Link>
+        <Link to="/" > Cancel</Link>
         </div>
     )
 }
